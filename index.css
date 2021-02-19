@@ -1,0 +1,164 @@
+
+@import url("vendor/fonts/fonts.css");
+
+@import url("vendor/normalize.css");
+
+.body {
+ background-color:  #2A2C2F;
+}
+
+/*************************
+page
+**************************/
+
+.page {
+ min-width: 320px;
+ position: relative;
+ background-color:  #2A2C2F;
+}
+
+/*************************
+header
+**************************/
+.header {
+ display: flex;
+ width: 288px;
+ min-height: 42px;
+ align-items: flex-end;
+ justify-content: space-between;
+ margin: 0 auto;
+ padding-top: 16px;
+ padding-bottom: 48px;
+}
+
+
+
+/*************************
+logo
+**************************/
+
+.logo {
+ min-width: 142px;
+ min-height: 42px;
+}
+
+/*************************
+logo
+**************************/
+.lang {
+   padding-bottom: 8px;
+}
+
+
+.lang-link {
+ width: 22px;
+ height: 20px;
+ font-family: Inter;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 18px;
+ line-height: 20px; 
+ text-decoration-line: underline;
+ color: #FFFFFF;
+}
+
+.lang-link_en {
+  text-decoration-line: none;
+  padding-left: 18px;
+  padding-top: 30px;
+}
+
+/*************************
+lead
+**************************/
+
+.lead {
+  background-color:  #2A2C2F;
+}
+
+.lead__title {
+ font-family: Inter;
+ font-style: normal;
+ font-weight: 900;
+ font-size: 40px;
+ line-height: 44px;
+ color: #FFFFFF;
+ text-align: center;
+ margin: 0;
+}
+
+.lead__subtitle {
+ font-family: Inter;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 16px;
+ line-height: 20px;
+ text-align: center;
+ margin-top: 16px;  
+ margin-bottom: 40px;  
+ color: #FFFFFF;
+}
+
+.lead__image {
+ min-width: 320px;
+ min-height: 200px; 
+ margin-bottom: 64px;
+}
+
+.lead__caption {
+ position: absolute;
+ margin: 0;
+ width: 158px;
+ height: 14px;
+ left: 16px;
+ top: 498px;
+ font-family: Inter;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 10px;
+ line-height: 14px;
+ letter-spacing: 0.15em;
+ text-transform: uppercase;
+ color: #FFFFFF;
+}
+
+/*************************
+intro
+**************************/
+
+.intro {
+ max-width: 288px;
+ max-height: 754px;  
+ margin: auto;
+}
+
+.intro__title {
+ font-family: Inter;
+ font-style: normal;
+ font-weight: 900;
+ font-size: 32px;
+ line-height: 35px;
+ color: #FFFFFF;
+ margin-top: 0;
+ margin-bottom: 40px;
+}
+
+.intro__text {
+ font-family: Inter;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 16px;
+ line-height: 26px;
+ color: #FFFFFF;
+ margin-bottom: 34px;
+}
+
+.intro__list {
+ font-family: Inter;
+ font-style: normal;
+ font-weight: bold;
+ font-size: 12px;
+ line-height: 18px;
+ margin-bottom: 64px;
+ color: #FFFFFF;
+}
