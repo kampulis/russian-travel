@@ -3,10 +3,6 @@
 
 @import url("vendor/normalize.css");
 
-.body {
- background-color:  #2A2C2F;
-}
-
 /*************************
 page
 **************************/
@@ -15,6 +11,7 @@ page
  min-width: 320px;
  position: relative;
  background-color:  #2A2C2F;
+ font-family: Inter, Arial, sans-serif;
 }
 
 /*************************
@@ -159,6 +156,92 @@ intro
  font-weight: bold;
  font-size: 12px;
  line-height: 18px;
- margin-bottom: 64px;
  color: #FFFFFF;
+ margin: 0;
+}
+
+.intro__list-container {
+ margin-top: 0;
+ margin-bottom: 64px;
+}
+
+.intro__list_number {
+ font-weight: normal; 
+}
+
+/*************************
+photo-grid
+**************************/
+
+.photo-grid {
+  display: grid;
+  gap: 12px;
+  justify-items: center;
+  margin-bottom: 64px;
+}
+
+/*************************
+  place
+**************************/
+
+.place {
+ display: grid;
+ justify-items: center;
+ gap: 32px;
+ grid-template-columns: 1fr;
+ margin-bottom: 50px;
+}
+
+.place__title {
+ font-style: normal;
+ font-weight: 900;
+ font-size: 32px;
+ line-height: 35px;
+ color: #FFFFFF;
+ width: 288px;
+ height: 35px;
+ margin: 0;
+}
+
+.place__url {
+ font-style: normal;
+ font-weight: normal;
+ font-size: 12px;
+ line-height: 12px;
+ letter-spacing: 0.2em;
+ color: #AAAAAA;
+ width: 288px;
+ height: 12px;
+ margin: 0;
+ padding-bottom: 12px;
+}
+
+.place__link {
+ font-style: normal;
+ font-weight: normal;
+ font-size: 18px;
+ line-height: 22px;
+ color: #FFFFFF;
+ transition: opacity 2s;
+}
+
+.place__link:hover {
+ opacity: 0.5;
+}
+
+.place__discription {
+    width: 288px;
+}
+
+.place__discription_paragraph {
+ font-style: normal;
+ font-weight: normal;
+ font-size: 16px;
+ line-height: 163%;
+ color: #FFFFFF;
+ margin: 0;
+}
+
+.place__discription_paragraph-two {
+    margin-top: 25px;
 }
