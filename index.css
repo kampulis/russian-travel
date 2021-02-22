@@ -103,11 +103,13 @@ lead
 **************************/
 
 .lead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #2A2C2F;
 }
 
 .lead__title {
-  font-family: Inter;
   font-style: normal;
   font-weight: 900;
   font-size: 40px;
@@ -115,18 +117,41 @@ lead
   color: #FFFFFF;
   text-align: center;
   margin: 0;
+  padding: 0 16px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .lead__title {
+    font-size: 96px;
+    line-height: 100px;
+    padding: 0 24px 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .lead__title {
+    max-width: 720px;
+  }
 }
 
 .lead__subtitle {
-  font-family: Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  margin-top: 32px;
-  margin-bottom: 40px;
+  margin: 0;
+  padding: 0 16px 40px;
   color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+  .lead__subtitle {
+    font-size: 30px;
+    line-height: 36px;
+    max-width: 640px;
+    padding: 0 64px 56px;
+  }
 }
 
 .lead__group {
@@ -137,6 +162,18 @@ lead
 .lead__image-with-caption {
   max-width: 984px;
   width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .lead__image-with-caption {
+    width: 928px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .lead__image-with-caption {
+    width: 984px;
+  }
 }
 
 .lead__image {
@@ -161,45 +198,6 @@ lead
 @media screen and (min-width: 1024px) {
   .lead__caption {
     margin-left: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .lead__title {
-    font-size: 96px;
-    line-height: 100px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .lead__title {
-    width: 720px;
-    height: 200px;
-    margin: auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .lead__subtitle {
-    font-size: 30px;
-    line-height: 36px;
-    width: 640px;
-    height: 72px;
-    margin: auto;
-    padding-top: 32px;
-    margin-bottom: 40px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .lead__image-with-caption {
-    width: 928px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .lead__image-with-caption {
-    width: 984px;
   }
 }
 
