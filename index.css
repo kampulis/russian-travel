@@ -331,7 +331,7 @@ photo-grid
 
 .place {
   display: grid;
-  justify-items: center;
+  justify-items: start;
   gap: 32px;
   grid-template-columns: 1fr;
 }
@@ -342,9 +342,8 @@ photo-grid
   font-size: 32px;
   line-height: 35px;
   color: #FFFFFF;
-  width: 288px;
-  height: 35px;
   margin: 0;
+  padding: 0 16px;
 }
 
 .place__title_cosa {
@@ -353,9 +352,9 @@ photo-grid
   font-size: 32px;
   line-height: 35px;
   color: #FFFFFF;
-  width: 288px;
   height: 35px;
   margin: 0;
+  padding: 0 16px;
 }
 
 .place__url {
@@ -365,10 +364,8 @@ photo-grid
   line-height: 12px;
   letter-spacing: 0.2em;
   color: #AAAAAA;
-  width: 288px;
-  height: 12px;
   margin: 0;
-  padding-bottom: 12px;
+  padding: 0 16px 12px;
 }
 
 .place__link {
@@ -378,14 +375,19 @@ photo-grid
   line-height: 22px;
   color: #FFFFFF;
   transition: opacity 2s;
+  padding: 0 16px;
 }
 
 .place__link:hover {
   opacity: 0.5;
 }
 
+.place__image {
+  width: 100%;
+}
+
 .place__description {
-  width: 288px;
+  padding: 0 16px;
 }
 
 .place__description_paragraph {
@@ -413,12 +415,13 @@ photo-grid
     align-content: center;
   }
   .place__image {
-    width: 340px;
-    height: 340px;
+    max-width: 340px;
+    max-height: 340px;
   }
   .place__description {
     justify-self: stretch;
     width: 352px;
+    padding: 0;
   }
   .place__links {
     align-self: end;
@@ -430,13 +433,11 @@ photo-grid
     font-size: 42px;
     line-height: 46px;
     width: 340px;
+    padding: 0;
   }
   .place__title_cosa {
-    width: 340px;
-    height: 92px;
-  }
-  .title__cosa {
-    display: block;
+    _min-height: 92px;
+    padding: 0;
   }
   .place__description_paragraph-two {
     margin-bottom: 78px;
@@ -454,8 +455,8 @@ photo-grid
     gap: 48px 32px;
   }
   .place__image {
-    width: 440px;
-    height: 440px;
+    max-width: 440px;
+    max-height: 440px;
     margin-bottom: 80px;
   }
   .place__description {
