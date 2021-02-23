@@ -1,0 +1,5 @@
+@import url("../lang/_en/lang__link_en.css");
+@import url("../lang/__link/lang__link.css");
+.lang {
+  padding-bottom: 8px;
+}

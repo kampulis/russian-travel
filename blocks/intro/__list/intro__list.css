@@ -1,0 +1,9 @@
+@import url("./_number/intro__list_number.css");
+.intro__list {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+  margin: 0;
+}
