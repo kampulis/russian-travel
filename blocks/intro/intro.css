@@ -4,30 +4,25 @@
 @import url("../intro/__list-container/intro__list-container.css");
 .intro {
   max-height: 754px;
-  width: 288px;
-  padding-left: 16px;
-  margin-top: 64px;
+  max-width: 690px;
+  padding: 64px 16px 0;
 }
 
 @media screen and (min-width: 768px) {
   .intro {
-    width: 720px;
     padding-left: 24px;
-    margin-left: 0;
+    padding-right: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .intro {
-    width: 690px;
-    margin-left: 0;
     padding-left: calc((100% - 928px) / 2);
   }
 }
 
 @media screen and (min-width: 1280px) {
   .intro {
-    width: 690px;
     padding-left: calc((100% - 984px) / 2);
   }
 }
