@@ -334,6 +334,11 @@ photo-grid
   justify-items: start;
   gap: 32px;
   grid-template-columns: 1fr;
+  padding-bottom: 50px;
+}
+
+.place:last-of-type {
+  padding-bottom: 66px;
 }
 
 .place__title {
@@ -388,27 +393,22 @@ photo-grid
   margin: 0;
 }
 
-.place__description_paragraph-two {
-  margin-top: 25px;
-  margin-bottom: 50px;
-}
-
-.place__description_paragraph-sibir {
-  margin-bottom: 66px;
-}
-
 @media screen and (min-width: 768px) {
   .place {
     grid-template-columns: 340px 352px;
     grid-template-rows: auto auto;
     justify-content: center;
     align-content: center;
+    padding-bottom: 72px;
+  }
+  .place:last-of-type {
+    padding-bottom: 90px;
   }
   .place__image {
     max-width: 340px;
     max-height: 340px;
   }
-  .place__title, .place__description .place__url, .place-link {
+  .place__title, .place__description, .place__url, .place__link {
     padding-left: 0;
   }
   .place__description {
@@ -424,12 +424,6 @@ photo-grid
     font-size: 42px;
     line-height: 46px;
   }
-  .place__description_paragraph-two {
-    margin-bottom: 78px;
-  }
-  .place__description_paragraph-sibir {
-    margin-bottom: 0;
-  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -439,14 +433,15 @@ photo-grid
     justify-content: center;
     align-content: center;
     gap: 48px 32px;
+    padding-bottom: 80px;
+  }
+  .place:last-of-type {
+    padding-bottom: 92px;
   }
   .place__image {
     max-width: 440px;
     max-height: 440px;
     margin-bottom: 80px;
-  }
-  .place__title, .place__description .place__url, .place-link {
-    padding-left: 0;
   }
   .place__description {
     justify-self: stretch;
@@ -459,12 +454,6 @@ photo-grid
     justify-self: start;
     font-size: 72px;
     line-height: 76px;
-  }
-  .place__description_paragraph {
-    font-size: 18px;
-  }
-  .place__description_paragraph-sibir {
-    margin-bottom: 0;
   }
 }
 
@@ -480,9 +469,6 @@ photo-grid
     max-height: 460px;
     margin-bottom: 80px;
   }
-  .place__title, .place__description .place__url, .place-link {
-    padding-left: 0;
-  }
   .place__description {
     justify-self: stretch;
   }
@@ -494,12 +480,6 @@ photo-grid
     justify-self: start;
     font-size: 72px;
     line-height: 76px;
-  }
-  .place__description_paragraph {
-    font-size: 18px;
-  }
-  .place__description_paragraph-sibir {
-    margin-bottom: 0;
   }
 }
 
@@ -566,7 +546,6 @@ cover
   .cover__item {
     height: 300px;
     width: 100%;
-    margin-top: 90px;
   }
 }
 
@@ -593,7 +572,6 @@ cover
   .cover__item {
     height: 640px;
     width: 100%;
-    margin-top: 0;
   }
   .cover__title {
     font-size: 72px;
@@ -617,7 +595,6 @@ cover
   .cover__item {
     height: 740px;
     width: 1184px;
-    margin-top: 0;
   }
   .cover__title {
     font-size: 72px;
