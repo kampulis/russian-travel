@@ -79,11 +79,13 @@ logo
   font-weight: normal;
   font-size: 18px;
   line-height: 20px;
+  -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
   color: #FFFFFF;
 }
 
 .lang-link_en {
+  -webkit-text-decoration-line: none;
   text-decoration-line: none;
   padding-left: 18px;
   padding-top: 30px;
@@ -232,7 +234,7 @@ intro
 
 .intro__list {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 12px;
   line-height: 18px;
   color: #FFFFFF;
@@ -261,14 +263,14 @@ intro
     width: 690px;
     padding-left: 48px;
     margin-left: 0;
+    padding-left: calc((100% - 928px) / 2)
   }
 }
 
 @media screen and (min-width: 1280px) {
   .intro {
     width: 690px;
-    padding-left: 148px;
-    margin-left: 0;
+    padding-left: calc((100% - 984px) / 2)
   }
 }
 
@@ -381,7 +383,7 @@ photo-grid
 }
 
 .place__description {
-  padding-left: 16px;
+  padding: 0 16px;
 }
 
 .place__description_paragraph {
@@ -414,6 +416,7 @@ photo-grid
   }
   .place__description {
     justify-self: stretch;
+    padding-right: 0;
   }
   .place__links {
     align-self: end;
