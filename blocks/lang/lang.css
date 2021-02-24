@@ -1,7 +1,5 @@
-@import url("../lang/_en/lang__link_en.css");
 @import url("../lang/__link/lang__link.css");
+@import url("../lang/__link/_active/lang__link_active.css");
 .lang {
-  padding-bottom: 8px;
-  background-color: #2A2C2F;
-  font-family: Inter, Arial, sans-serif;
+  padding-bottom: 6px;
 }

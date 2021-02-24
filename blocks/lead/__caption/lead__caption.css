@@ -1,7 +1,6 @@
 .lead__caption {
   align-self: flex-start;
-  width: 158px;
-  height: 14px;
+  max-width: 158px;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -10,6 +9,8 @@
   text-transform: uppercase;
   color: #FFFFFF;
   margin-left: 16px;
+  margin-bottom: 0;
+  margin-top: 8px;
 }
 
 @media screen and (min-width: 1024px) {

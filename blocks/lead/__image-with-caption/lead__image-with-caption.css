@@ -1,4 +1,7 @@
 .lead__image-with-caption {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   max-width: 984px;
   width: 100%;
 }

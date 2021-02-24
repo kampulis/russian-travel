@@ -4,22 +4,25 @@
 @import url("../cover/__title-link/cover__title-link.css");
 .cover {
   background-image: url("../../images/__background.png");
+  background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 200px;
+  min-width: 300px;
+  width: 100%;
   box-sizing: border-box;
   transition: opacity 2s;
   position: relative;
   margin: auto;
-  width: 100%;
+  padding: 0 16px;
   z-index: 1;
 }
 
 .cover:before {
   content: "";
-  background: black;
+  background: #2A2C2F;
   opacity: 0.3;
   position: absolute;
   top: 0;
@@ -42,6 +45,7 @@
 
 @media screen and (min-width: 768px) {
   .cover {
+    padding: 0;
     min-height: 480px;
   }
 }

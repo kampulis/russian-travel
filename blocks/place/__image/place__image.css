@@ -13,7 +13,6 @@
   .place__image {
     max-width: 440px;
     max-height: 440px;
-    margin-bottom: 80px;
   }
 }
 
@@ -21,6 +20,5 @@
   .place__image {
     max-width: 460px;
     max-height: 460px;
-    margin-bottom: 80px;
   }
 }

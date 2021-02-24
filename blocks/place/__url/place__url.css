@@ -14,3 +14,9 @@
     padding-left: 0;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .place__url {
+    line-height: 20px;
+  }
+}

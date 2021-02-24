@@ -7,3 +7,10 @@
   margin: 0;
   padding-bottom: 26px;
 }
+
+@media screen and (min-width: 1024px) {
+  .place__description-paragraph {
+    font-size: 18px;
+    line-height: 163%;
+  }
+}
